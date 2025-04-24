@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Website</title>
+    <style>
+        body{background-color:cream;}
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+  </head>
+    <body>
+      <h1>Mall Prerequisites Page</h1>
+      <p>Below is a list of the items available in our mall:</p>
+      <ol type="I">
+          <li>Fresh Fruits and Vegetables</li>
+          <li>Kitchen Hardware</li>
+          <li>Soft Drinks and Liquor</li>
+          <li>Household Items</li>
+      </ol>
+            <p>This is the mall where you should buy the items on the list.</p>
+            <img src="https://images.pexels.com/photos/264502/pexels-photo-264502.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mall of Berlin">
+            <h2>Department Head Personal Information</h2>
+            <p>Here is information on all department heads available for assistance.</p>
+            <table>
+              <thead>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Emails</th>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Vanessa M.</td>
+                <td>1345-Berlin Ndogo </td>
+                <td>12084522</td>
+                <td>mvanessa@yahoo.mail</td>
+                </tr>
+                <tr>
+                <td>Grace O.</td>
+                <td>285-Maki Enterprise</td>
+                <td>7403740827</td>
+                <td>grace.oreilly@gmail.com </td>
+                </tr>
+                <tr>
+                <td>Melissa R.</td>
+                <td>18765456- Mayfair Shop3</td>
+                <td>0212345654</td>
+                <td>mmelissa.453@hotmail.com</td>
+                <tr>
+                <td>Pyotr Tchaikovsky</td>
+                <td>2534, Sansa Fruits</td>
+                <td>874653486</td>
+                <td>tchaikovsky@gmail.com</td>
+                </tr>
+                <tr>
+                <td>Hans Wegner</td>
+                <td>2876-Locsmith Shop, Block 2</td>
+                <td>560725</td>
+                <td>hans.287@gmail.com</td>
+                </tbody>
+            </table>
+            <!--form details-->
+            <h3>Registration Form<h3>
+            
+           <p>To book your session, please fill out the form below to register.</p>
+      <form>
+           <fieldset>
+             <legend>Personal Information</legend>
+             <label for = "name">Name: </label>
+             <input type="text" name="personal_info" minlength="10" maxlength="80" placeholder="Enter full name" required>
+             <br>
+             <label for="email">Email:</label>
+             <input type="text"name="email"required>
+             <br>
+             <label for ="password">Passcode</label>
+             <input type="integer" name="passcode" pattern="[0-9,a-z]{4,4}" placeholder="input passscode"validation required>
+             <br>
+             <label for="date_field">Date you wish to come: </label>
+             <input name="date_field" required>
+             </fieldset>
+               <!-- Dropdown -->
+               <fieldset>
+        <label for="Assistants">Choose an Assistant:</label>
+        <select id="assistants" name="assistants">
+            <option value="vanessa">Vanessa</option>
+            <option value="grace">Grace</option>
+            <option value="melissa">Melissa</option>
+            <option value="pyotr">Pyotr Tchaikovsky</option>
+            <option value="hans">Hans</option>
+            </fieldset>
+            
+        </select><br><br>
+                                
+        <!-- Radio Buttons -->
+            <fieldset>
+        <p>Choose Branch:</p>
+        <input type="radio" id="main_branch" name="branch" value="main_branch">
+        <label for="main_branch">Main Branch</label><br>
+        <input type="radio" id="branch2" name="second" value="2nd">
+        <label for="branch2">Industrial Area Branch</label><br>
+        <input type="radio" id="branch3" name="third" value="3rd">
+        <label for="branch3">City Branch</label><br><br>
+            </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+        <p>Select your interests:</p>
+        <input type="checkbox" id="Kitchenstuff" name="interest" value="cutlery">
+        <label for="kitchenstuff">Cutlery and Kitchenware</label><br>
+        <input type="checkbox" id="fresh_food" name="interest" value="fruits_n_vegetables">
+        <label for="fresh_food">Fresh Fruits and Vegetables</label><br>
+        <input type="checkbox" id="Drinks" name="interest" value="drinks">
+        <label for="Drinks">Soft Drinks or Liquor</label><br><br>
+        <input type="checkbox" id="household_stuff" name="interest" value="hh_stuff">
+        <label for ="household_stuff"> Household Items:Furniture, Glassware, etc</label>
+        </fieldset>
+      <br><br>
+        <input type="submit" value="Submit">
+    </form>
+             
+            
+            
+      
+          
